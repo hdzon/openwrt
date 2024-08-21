@@ -21,7 +21,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.6.y"
+        default: "6.1.y_6.6.y"
         type: choice
         options:
           - 5.4.y
@@ -70,14 +70,14 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-dzon"
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -dzon
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Ho_Chi_Minh
 
 jobs:
   build:
