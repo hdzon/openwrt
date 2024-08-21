@@ -86,7 +86,7 @@ on:
         type: boolean
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Ho_Chi_Minh
 
 jobs:
   build:
