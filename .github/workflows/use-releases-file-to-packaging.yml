@@ -21,7 +21,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905x2"
         type: choice
         options:
           - all
@@ -212,15 +212,15 @@ on:
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
-        default: "ophub"
+        default: "dzon"
         type: choice
         options:
           - ophub
           - angel
-          - yourname
+          - dzon
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Ho_Chi_Minh
 
 jobs:
   build:
